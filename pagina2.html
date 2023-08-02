@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo da pagina 2</title>
+</head>
+
+<body>
+    <p> Wesley Schuab Vieira IFSP Pagina 2</p>
+    Campos do Jordão
+    <h1> 02 Definir e Obter saldo</h1>
+    <h2>Subtitulo</h2>
+    <h2>Subtitulo menor</h2>
+    <p>
+        <b> Transcrição</b>
+        Mas, reparei um detalhe, um ponto de atenção no nosso código. Vou comentar tudo o que já fizemos no código de
+        "Program.cs" usando o atalho "Ctrl + K + C". Em seguida, criar uma nova conta, a conta3.
+
+        ContaCorrente conta3 = new ContaCorrente()
+        conta3.saldo = -10;COPIAR CÓDIGO
+        O problema é que estamos conseguindo atribuir valor negativo ao campo de saldo. Isso não é bacana. Por que isso
+        acontece?
+
+        Voltando à classe ContaCorrente, definimos que o campo saldo da classe é público. Então, ele é visível a partir
+        de outros pontos do código. Isso não é legal. Precisamos resolver a visibilidade desse campo.
+
+        Isso é uma brecha de segurança no código. Imagine o seguinte: no futuro teremos uma equipe trabalhando no mesmo
+        código. Se tivermos pontos de falhas como esse pode acontecer que outro desenvolvedor consiga inserir valor
+        negativo de saldo e isso quebre a lógica de funcionamento do sistema.
+
+        Vamos corrigir isso agora. No "ContaCorrente.cs" deixaremos o campo saldo como privado: private double saldo =
+        100;.
+    </p>
+    <p>
+        Porque nós o usamos?
+        É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando
+        estiver examinando sua diagramação.
+        A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui,
+        conteúdo aqui",
+        fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores
+        de páginas na internet agora usam Lorem Ipsum
+        como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de
+        construção. Várias versões novas surgiram ao longo dos
+        anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).
+    </p>
+
+    De onde ele vem?
+</body>
+
+</html>
