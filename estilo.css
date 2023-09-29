@@ -1,0 +1,74 @@
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 5px;
+}
+
+.header{
+    background-color: bisque;
+    height: 120px;
+}
+
+.footer{
+    background-color: bisque;
+    height: 120px;
+}
+
+.main{
+    text-align: left;
+    background-color: antiquewhite;
+    height: 300px;
+    font-size: 24px;
+}
+
+.lado1{
+    background-color: aquamarine;
+}
+
+.lado2{
+    background-color: aquamarine;
+}
+
+/* Estilo aplicados quando a largula da tela é maior ou igual a 800px */
+@media all and (min-width: 800px){
+    .main{
+        flex: 3;
+    }
+    /* mudar a ordem da exibição para que aparece antes de lado2 */
+    /* mudar quandoa tela for menor para essa ordem */
+    .lado1{
+        order: 1;
+    }
+    .lado2{
+        order: 2;
+    }
+    .main{
+        order: 2;
+    }
+    .footer{
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px){
+    .lado{
+        flex: 1;
+    }
+    .lado1{
+        background-color: rgb(255, 0, 187);
+    }
+    .lado2{
+        background-color: aqua;
+    }
+    .footer{
+        background-color: rgb(132, 255, 0);
+    }
+   
+}
