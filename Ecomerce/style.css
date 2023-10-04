@@ -1,0 +1,8 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+}
+*{
+    margin: 16;
+    padding: 16;
+}
